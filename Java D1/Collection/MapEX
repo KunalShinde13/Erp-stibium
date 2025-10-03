@@ -1,0 +1,47 @@
+import java.util.*;
+
+public class MapExample {
+    public static void main(String[] args) {
+        // HashMap
+        Map<Integer, String> map1 = new HashMap<>();
+        map1.put(1, "Java");
+        map1.put(2, "Python");
+        map1.put(3, "C++");
+        System.out.println("HashMap: " + map1);
+
+
+
+
+
+
+        // LinkedHashMap (insertion order)
+        Map<Integer, String> map2 = new LinkedHashMap<>();
+        map2.put(2, "Dog");
+        map2.put(1, "Cat");
+        map2.put(3, "Elephant");
+        System.out.println("LinkedHashMap: " + map2);
+
+
+
+
+
+
+        // TreeMap (sorted by keys)
+        Map<Integer, String> map3 = new TreeMap<>();
+        map3.put(5, "Five");
+        map3.put(2, "Two");
+        map3.put(8, "Eight");
+        System.out.println("TreeMap: " + map3);
+
+
+
+
+        
+
+        // Hashtable (thread-safe)
+        Hashtable<Integer, String> table = new Hashtable<>();
+        table.put(100, "A");
+        table.put(200, "B");
+        System.out.println("Hashtable: " + table);
+    }
+}
