@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Global Styles ---------- */
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 100%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(218, 234, 237);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Navbar Styling ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Tailwind's blue-600 */
+  color: white;
+  padding: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #000000;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #000000;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 140%;
+  font-weight: 1000;
+  transition: color 0.2s ease;
+  background-color: #000000;
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #053a7a; /* lighter shade */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* full screen height */
+  text-align: center;
+  padding: 0 20px; /* add some horizontal padding for small screens */
+  background-image: url('E:/Documents/Images/home-bg.jpg'); /* optional background */
+  background-size: cover;
+  background-position: center;
+}
+
+.home-title {
+  font-size: 2.5rem; /* text-4xl equivalent */
+  font-weight: bold;
+  color: #1f2937; /* text-gray-800 */
+  margin-bottom: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.home-text {
+  font-size: 1.2rem;
+  color: #374151; /* gray-700 */
+  max-width: 600px; /* limit width so text wraps */
+  line-height: 1.6; /* spacing between lines */
+  margin: 0 auto; /* center horizontally */
+  word-wrap: break-word; /* ensure long text wraps */
+}
+
+
+
+/* General Page Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Container */
+.team-container {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+/* Title */
+.menu-title {
+  text-align: center;
+  color: #1e40af;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Table Container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table Styles */
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.menu-table thead {
+  background-color: #2563eb;
+  color: white;
+}
+
+.menu-table th {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Table Rows */
+.menu-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.menu-table tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Image */
+.menu-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Description Column */
+.menu-table td:last-child {
+  color: #555;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Feedback Container */
+.feedback-container {
+  max-width: 600px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.feedback-title {
+  text-align: center;
+  font-size: 26px;
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+/* Alert Messages */
+.feedback-alert {
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.feedback-alert.success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.feedback-alert.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Form */
+.feedback-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.feedback-form label span {
+  color: red;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus State */
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+  outline: none;
+}
+
+/* Buttons */
+.feedback-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-submit {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-reset {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reset:hover {
+  background-color: #e5e7eb;
+}
